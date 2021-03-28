@@ -1,0 +1,25 @@
+/* Variables */
+$color-one: #fed330;
+$color-two: #f5f6fa;
+$color-three: #2f3640;
+$font-header: 'Signika', sans-serif;
+$font-text: 'Inconsolata', monospace;
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: $font-text;
+    text-align: center;
+    }
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }

@@ -1,2 +1,23 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUNBO0VBQ0ksc0JBQXNCO0FDSjFCOztBRE1BO0VBQ0ksU0FBUztFQUNULGVBQWU7RUFDZixxQ0FSZ0M7RUFTaEMsa0JBQWtCO0FDSHRCOztBREtBO0VBQ0ksaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLGFBQWE7RUFDYixlQUFlO0VBQ2YsOEJBQThCO0FDRmxDIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
