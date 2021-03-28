@@ -23,3 +23,99 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     }
+  h1, .btn, ol {
+    text-transform: uppercase;
+  }
+/* Navigation */
+.gold {
+  color: $color-one;
+}
+nav {
+    padding: 12px 0;
+    position: absolute;
+    left: 150px;
+    bottom: 350px;
+    }
+nav ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    }
+nav li {
+    display: inline-block;
+    margin-right: 36px;
+    position: relative;
+    }
+.navigation a {
+    text-decoration: none;
+    }
+.navigation a:hover {
+    font-weight: 700;
+    }
+.navigation ol ul li {
+    display: block;
+    margin-bottom: 12px;
+    }
+ol li ul {
+    display: none;
+    }
+.navigation li:hover ul {
+    display: block;
+    }
+ul {  /* caly blok listy 2 poziomu */
+    position: absolute;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+ol li { /* lista 1 poziomu */
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    }
+ol > li > ul > li > a:hover {
+    font-weight: 700;
+}
+ol > li > a {
+    color: $color-two;
+    }
+
+ol > li > ul > li > a {
+    display: block;
+    padding: 0 24px;
+    color: $color-three;
+    text-align: left;
+    }
+/* Splash */
+.splash {
+  background-image: url('https://images.pexels.com/photos/3892369/pexels-photo-3892369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+  .page-title, .page-subtitle, .btn {
+    color: $color-two;
+  }
+  .btn {
+    background: $color-one;
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 100% 0;
+    background-size: 300%;
+  }
