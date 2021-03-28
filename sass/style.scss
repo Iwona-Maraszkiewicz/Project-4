@@ -18,14 +18,12 @@ body {
     }
 section {
         padding: 96px 0;
-        display: flex;
         }
 .container {
     max-width: 1140px;
     padding: 0 20px;
     text-align: center;
     margin: auto;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     }
@@ -130,8 +128,21 @@ ol > li > ul > li > a {
     background-size: 300%;
   }
 /* Services */
+.fas {
+   font-size: 40px;
+   width: 70px;
+   height: 70px;
+   background: white;
+   border-radius: 50%;
+   border: 3px solid $color-one;
+   line-height: 70px;
+   color: $color-one;
+   margin: 5px;
+   text-align: center;
+   }
 
 /* Portfolio */
+
 
 /* Footer */
  .list-media {
@@ -139,7 +150,6 @@ ol > li > ul > li > a {
    list-style-type: none;
    border: none;
    display: flex;
-   flex-wrap: wrap;
    justify-content: space-between;
    margin: auto;
    }
