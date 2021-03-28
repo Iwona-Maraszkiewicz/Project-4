@@ -132,3 +132,31 @@ ol > li > ul > li > a {
 /* Services */
 
 /* Portfolio */
+
+/* Footer */
+ .list-media {
+   background: white;
+   list-style-type: none;
+   border: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: auto;
+   }
+.list-media li {
+   font-size: 0px;
+   }
+.fab {
+   font-size: 20px;
+   width: 45px;
+   height: 45px;
+   background: $color-three;
+   border-radius: 50%;
+   line-height: 45px;
+   color: $color-two;
+   display: block;
+   margin: 5px;
+   }
+.list-media li a {
+   text-decoration: none;
+   }
