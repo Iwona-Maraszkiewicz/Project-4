@@ -17,7 +17,7 @@ body {
     text-align: center;
     }
 section {
-        padding: 96px 0;
+        padding: 60px 0;
         }
 .container {
     max-width: 1140px;
@@ -30,8 +30,15 @@ section {
   h1, .btn, ol {
     text-transform: uppercase;
   }
-  h1, h3, h5 {
+  h1, h3 {
     color: $color-three;
+  }
+  h1 {
+    font-size: 40px;
+  }
+.title-subtitle-section {
+    padding-bottom: 40px;
+
   }
 
 /* Navigation */
@@ -142,7 +149,14 @@ ol > li > ul > li > a {
    }
 
 /* Portfolio */
-
+.image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.card-body {
+  margin-bottom: 70px;
+}
 
 /* Footer */
  .list-media {
@@ -152,6 +166,7 @@ ol > li > ul > li > a {
    display: flex;
    justify-content: space-between;
    margin: auto;
+   left: 200px;
    }
 .list-media li {
    font-size: 0px;
