@@ -5,6 +5,7 @@ $color-three: #2f3640;
 $color-four: #576574;
 $font-header: 'Signika', sans-serif;
 $font-text: 'Inconsolata', monospace;
+$font-gold: 'Dancing Script', cursive;
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -25,6 +26,7 @@ section {
     text-align: center;
     margin: auto;
     flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
     }
   h1, .btn, ol {
@@ -38,18 +40,20 @@ section {
   }
 .title-subtitle-section {
     padding-bottom: 40px;
-
   }
 
 /* Navigation */
 .gold {
   color: $color-one;
+  font-family: $font-gold;
+  font-size: 30px;
 }
 nav {
-    padding: 12px 0;
     position: absolute;
-    left: 150px;
-    bottom: 350px;
+    right: 50px;
+    bottom: 310px;
+    width: 90%;
+    display: block;
     }
 nav ol {
     padding: 0;
@@ -58,8 +62,7 @@ nav ol {
     }
 nav li {
     display: inline-block;
-    margin-right: 36px;
-    position: relative;
+
     }
 .navigation a {
     text-decoration: none;
@@ -67,40 +70,14 @@ nav li {
 .navigation a:hover {
     font-weight: 700;
     }
-.navigation ol ul li {
-    display: block;
-    margin-bottom: 12px;
-    }
-ol li ul {
-    display: none;
-    }
-.navigation li:hover ul {
-    display: block;
-    }
-ul {  /* caly blok listy 2 poziomu */
-    position: absolute;
-    background: white;
-    left: 50%;
-    transform: translateX(-50%);
-    }
-ol li { /* lista 1 poziomu */
-    margin: 10px;
+ol li {
     width: 150px;
     height: 40px;
     }
-ol > li > ul > li > a:hover {
-    font-weight: 700;
-}
 ol > li > a {
     color: $color-two;
     }
 
-ol > li > ul > li > a {
-    display: block;
-    padding: 0 24px;
-    color: $color-three;
-    text-align: left;
-    }
 /* Splash */
 .splash {
   background-image: url('https://images.pexels.com/photos/3892369/pexels-photo-3892369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -134,6 +111,7 @@ ol > li > ul > li > a {
     background-position: 100% 0;
     background-size: 300%;
   }
+
 /* Services */
 .fas {
    font-size: 40px;
@@ -164,7 +142,6 @@ ol > li > ul > li > a {
    list-style-type: none;
    border: none;
    display: flex;
-   justify-content: space-between;
    margin: auto;
    left: 200px;
    }
@@ -185,3 +162,16 @@ ol > li > ul > li > a {
 .list-media li a {
    text-decoration: none;
    }
+
+/* Media */
+@media (max-width: 767px) {
+section {
+  padding: 20px 0;
+}
+card-body {
+  margin-bottom: 20px;
+}
+.footer {
+  padding: 0;
+}
+}
